@@ -19,7 +19,7 @@ public class Skin extends Organ{
 	@Override
 	public void getDetails() {
 		super.getDetails();
-		System.out.println("\t Colour: "+ this.getColor());
+		System.out.println("\t| Colour: "+ this.getColor());
 	}
 	
 }

@@ -26,7 +26,7 @@ public class Main {
 					+ " 4. Skin\n"
 					+ " 5. Stomach\n"
 					+ " 6. Exit\n");
-			System.out.println("\t Enter your choice");
+			System.out.print("\t Enter your choice: ");
 			choice= sc.nextInt();
 			switch(choice) {
 			case 1:
@@ -69,6 +69,18 @@ public class Main {
 					p.getHeart().setRate(rate);
 					System.out.println("\t\t\tHeart rate chnaged to: "+ p.getHeart().getRate());
 				} else continue;
+				break;
+			case 4:
+				p.getSkin().getDetails();
+				break;
+				
+			case 5:
+				p.getStomach().getDetails();
+				System.out.println("\t\t1. Digest?");
+				if (sc.nextInt()==1) {
+					p.getStomach().Digest();
+				}
+				else continue;
 				break;
 			
 			case 6:
